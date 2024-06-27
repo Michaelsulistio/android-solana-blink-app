@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold.usecase
+package com.example.blinkexampleapp.usecase
 
 import android.content.SharedPreferences
 import com.solana.publickey.SolanaPublicKey

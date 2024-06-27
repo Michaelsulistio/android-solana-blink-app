@@ -1,8 +1,8 @@
-package com.example.solanakotlincomposescaffold.usecase
+package com.example.blinkexampleapp.usecase
 
 import android.net.Uri
 import android.util.Log
-import com.example.solanakotlincomposescaffold.networking.KtorHttpDriver
+import com.example.blinkexampleapp.networking.KtorHttpDriver
 import com.funkatronics.encoders.Base58
 import com.solana.networking.Rpc20Driver
 import com.solana.rpccore.JsonRpc20Request

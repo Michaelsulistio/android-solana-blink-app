@@ -1,15 +1,15 @@
-package com.example.solanakotlincomposescaffold.viewmodel
+package com.example.blinkexampleapp.viewmodel
 
 import androidx.core.net.toUri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.solanakotlincomposescaffold.BuildConfig
-import com.example.solanakotlincomposescaffold.usecase.AccountBalanceUseCase
-import com.example.solanakotlincomposescaffold.usecase.ConfirmTransactionUseCase
-import com.example.solanakotlincomposescaffold.usecase.Connected
-import com.example.solanakotlincomposescaffold.usecase.MemoTransactionUseCase
-import com.example.solanakotlincomposescaffold.usecase.PersistenceUseCase
-import com.example.solanakotlincomposescaffold.usecase.RequestAirdropUseCase
+import com.example.blinkexampleapp.BuildConfig
+import com.example.blinkexampleapp.usecase.AccountBalanceUseCase
+import com.example.blinkexampleapp.usecase.ConfirmTransactionUseCase
+import com.example.blinkexampleapp.usecase.Connected
+import com.example.blinkexampleapp.usecase.MemoTransactionUseCase
+import com.example.blinkexampleapp.usecase.PersistenceUseCase
+import com.example.blinkexampleapp.usecase.RequestAirdropUseCase
 import com.funkatronics.encoders.Base58
 import com.solana.publickey.SolanaPublicKey
 import com.solana.mobilewalletadapter.clientlib.ActivityResultSender

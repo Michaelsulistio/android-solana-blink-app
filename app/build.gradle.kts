@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.solanakotlincomposescaffold"
-    compileSdk = 33
+    namespace = "com.example.blinkexampleapp"
+    compileSdk = 34
     android.buildFeatures.buildConfig = true
 
     defaultConfig {
-        applicationId = "com.example.solanakotlincomposescaffold"
+        applicationId = "com.example.blinkexampleapp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -64,7 +64,6 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
     implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0-RC")
     implementation("io.ktor:ktor-client-core:2.3.4")
@@ -76,6 +75,10 @@ dependencies {
     implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.0")
 
     implementation("com.google.dagger:hilt-android:2.48")
+    implementation("androidx.compose.material3:material3-android:1.2.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.navigation:navigation-fragment:2.7.7")
     kapt("com.google.dagger:hilt-compiler:2.48")
 
     testImplementation("junit:junit:4.13.2")

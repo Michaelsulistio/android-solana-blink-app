@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold.di
+package com.example.blinkexampleapp.di
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -19,7 +19,7 @@ val identityName = "Solana"
     ViewModelComponent::class
 )
 @Module
-class SolanaKotlinComposeScaffoldModule {
+class BlinkExampleAppModule {
 
     @Provides
     fun providesSharedPrefs(@ApplicationContext ctx: Context): SharedPreferences {

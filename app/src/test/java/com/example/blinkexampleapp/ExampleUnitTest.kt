@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold
+package com.example.blinkexampleapp
 
 import org.junit.Test
 

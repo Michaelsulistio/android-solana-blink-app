@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold.usecase
+package com.example.blinkexampleapp.usecase
 
 import android.net.Uri
 import com.solana.publickey.SolanaPublicKey

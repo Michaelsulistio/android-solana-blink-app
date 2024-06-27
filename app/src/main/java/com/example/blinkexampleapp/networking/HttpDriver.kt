@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold.networking
+package com.example.blinkexampleapp.networking
 
 import com.solana.networking.HttpNetworkDriver
 import com.solana.networking.HttpRequest

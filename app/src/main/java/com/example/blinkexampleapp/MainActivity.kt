@@ -1,4 +1,4 @@
-package com.example.solanakotlincomposescaffold
+package com.example.blinkexampleapp
 
 import android.content.Context
 import android.content.Intent
@@ -32,8 +32,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.solanakotlincomposescaffold.ui.theme.SolanaKotlinComposeScaffoldTheme
-import com.example.solanakotlincomposescaffold.viewmodel.MainViewModel
+import com.example.blinkexampleapp.ui.theme.BlinkExampleAppTheme
+import com.example.blinkexampleapp.viewmodel.MainViewModel
 import com.solana.mobilewalletadapter.clientlib.ActivityResultSender
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.material3.Scaffold
@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
         val sender = ActivityResultSender(this)
 
         setContent {
-            SolanaKotlinComposeScaffoldTheme {
+            BlinkExampleAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
