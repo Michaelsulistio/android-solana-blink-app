@@ -176,6 +176,7 @@ class BlinkComposeActivity : ComponentActivity() {
                         title = actionResponse!!.title,
                         description = actionResponse!!.description,
                         label = actionResponse!!.label,
+                        url = actionUrl!!,
                         disabled = actionResponse!!.disabled,
                         links = actionResponse!!.links,
                         error = actionResponse!!.error

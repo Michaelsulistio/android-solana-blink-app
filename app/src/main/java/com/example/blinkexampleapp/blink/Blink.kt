@@ -14,9 +14,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ExitToApp
+import androidx.compose.material.icons.filled.ExitToApp
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -45,6 +51,7 @@ import io.ktor.client.request.header
 import io.ktor.client.statement.HttpResponse
 import io.ktor.client.statement.bodyAsText
 import kotlinx.coroutines.launch
+import java.net.URL
 
 
 @Composable
@@ -53,6 +60,7 @@ fun Blink(
     title: String,
     description: String,
     label: String,
+    url: String,
     disabled: Boolean? = null,
     links: ActionLinks? = null,
     error: ActionError? = null
@@ -96,17 +104,32 @@ fun Blink(
                 .background(color = MaterialTheme.colorScheme.surface)
                 .padding(16.dp)
         ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(0.dp, 6.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Start
+            ) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ExitToApp,
+                    contentDescription = "Link Icon",
+                    tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                    modifier = Modifier.padding(end = 6.dp).size(12.dp)
+                )
+                Text(text = URL(url).host, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
+            }
             Text(
                 text = title,
-                fontSize = 24.sp,
+                style = MaterialTheme.typography.bodyLarge,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
-                    .padding(bottom = 16.dp)
+                    .padding(bottom = 4.dp)
             )
 
             Text(
                 text = description,
-                fontSize = 16.sp,
+                style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier
                     .padding(bottom = 16.dp)
             )
