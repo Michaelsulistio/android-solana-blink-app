@@ -128,13 +128,14 @@ class BlinkComposeActivity : ComponentActivity() {
                     try {
                         val client = HttpClient()
                         val response: HttpResponse =
-                            client.get("https://dial.to/api/helius/stake") {
+                            client.get(actionUrl) {
                                 header("Accept", "application/json")
                             }
 
                         val responseBody = response.bodyAsText()
                         val json = Json { ignoreUnknownKeys = true }
                         actionResponse = json.decodeFromString<ActionGetResponse>(responseBody)
+                        println(actionResponse)
                     } catch (e: Exception) {
                         println("Action GET error occurred: ${e.message}")
                         println(e.stackTrace)
