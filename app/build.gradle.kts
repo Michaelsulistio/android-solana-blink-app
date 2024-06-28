@@ -68,11 +68,13 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0-RC")
     implementation("io.ktor:ktor-client-core:2.3.4")
     implementation("io.ktor:ktor-client-android:2.3.4")
+    implementation("io.ktor:ktor-client-cio:2.3.4")
 
     implementation("io.github.funkatronics:multimult:0.2.0")
     implementation("com.solanamobile:web3-solana:0.2.2")
     implementation("com.solanamobile:rpc-core:0.2.3")
     implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.0")
+    implementation("io.coil-kt:coil-compose:2.6.0")
 
     implementation("com.google.dagger:hilt-android:2.48")
     implementation("androidx.compose.material3:material3-android:1.2.1")
