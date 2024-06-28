@@ -24,6 +24,7 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -210,10 +211,11 @@ fun ParameterizedActionsRow(actions: List<LinkedAction>, disabled: Boolean) {
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                TextField(
+                OutlinedTextField(
                     value = userInput,
                     onValueChange = { userInput = it },
-                    placeholder = { Text(text = linkedAction.parameters?.first()?.label ?: "") },
+                    maxLines = 1,
+                    label = { Text(text = linkedAction.parameters?.first()?.label ?: "", style = MaterialTheme.typography.labelMedium) },
                     modifier = Modifier.weight(0.6f)
                 )
 
